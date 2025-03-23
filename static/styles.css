@@ -1,0 +1,91 @@
+*{
+  margin:0;
+}
+#guide_main-container>section{ /* TEMP??*/
+  padding:5%;
+}
+header{
+  background-color:#4A6C6F;
+  color:#F3E9DC;
+  display:flex;
+  justify-content: flex-end;
+  padding:1.5%;
+}
+#index_img1-styling{
+  left:0%;
+  /* position:absolute; */
+  width:25%;
+}
+#index_section1-container{
+  background-color: #F3E9DC;
+  display:flex;
+  padding:2.5%;
+}
+#index_section1-div1{
+  display:flex;
+  width:70%;
+}
+#index_section1-div2{
+  display:flex;
+  flex-direction:column;
+  margin-left:1.5%;
+  margin-right:1.5%;
+  width:30%;
+}
+#index_section1-div2>h2{
+  font-size:250%;
+  font-weight:normal;
+}
+#index_section1_header{
+  font-size:250%;
+}
+#index_section1_text{
+  margin-left:1.5%;
+  margin-right:1.5%;
+}
+#index_section2-container{
+  /* background-color: #F3E9DC; */
+  display:flex;
+  padding:2.5%;
+}
+#index_section2-div1{
+  width:70%;
+}
+#index_section2-div2{
+  width:30%;
+}
+.logo_incline{
+  font-size:250%;
+  position:absolute; /*note:absolute overrides on top of other content*/
+  top:1.5%;
+  left:1.5%;
+}
+main{ /*temporary*/
+  align-items:center; /*this aligns horizontally*/
+  display:flex;
+  flex-direction: column;
+  justify-content:center; /*this aligns vertically*/
+}
+nav{
+  color:#F3E9DC;
+  font-size:175%;
+  justify-content: flex-end;
+  text-decoration:none;
+  width:45%;
+}
+.nav_item{
+  padding-left:2%;
+  padding-right:2%;
+}
+
+
+/*handling all links visited/not, will be editing*/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit; /* Takes color from parent element */
+  outline: none;
+}
