@@ -1,9 +1,30 @@
 *{
   margin:0;
 }
+#contact_section2-container{
+  display:flex;
+  justify-content: space-evenly;
+  width:100%; /*without this isn't evenly spaced*/
+}
+footer{
+  align-items:center;
+  background-color: #352208;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  padding:5%;
+}
+footer>table{
+  border-spacing:15px;
+}
 #guide_main-container>section{ /* TEMP??*/
   padding:5%;
 }
+#guide_section2-container>table{
+  border-collapse:collapse;
+  border: solid 2px black;
+}
+
 header{
   background-color:#4A6C6F;
   color:#F3E9DC;
@@ -19,7 +40,7 @@ header{
 #index_section1-container{
   background-color: #F3E9DC;
   display:flex;
-  padding:2.5%;
+  /* padding:2.5%; */
 }
 #index_section1-div1{
   display:flex;
@@ -28,6 +49,7 @@ header{
 #index_section1-div2{
   display:flex;
   flex-direction:column;
+  font-size:120%;
   margin-left:1.5%;
   margin-right:1.5%;
   width:30%;
@@ -40,16 +62,46 @@ header{
   font-size:250%;
 }
 #index_section1_text{
+  font-size:150%;
   margin-left:1.5%;
   margin-right:1.5%;
 }
 #index_section2-container{
-  /* background-color: #F3E9DC; */
+  background-color: #F3E9DC;
   display:flex;
-  padding:2.5%;
+  margin-top:5%;
+  width:100%
 }
 #index_section2-div1{
-  width:70%;
+  align-items:center;
+  background-image: url('images/duq_pano.jpeg');
+  background-repeat:no-repeat;
+  background-size:100% auto; /*width adjusts, height auto matches*/
+  color:white;
+  display:flex;
+  justify-content:center;
+  padding:5%;
+  width:65%;
+}
+#index_section2-div2{
+  align-items:flex-end;
+  display:flex;
+  flex-direction:column; /*OH if using columns, justify becomes the up/down vert aliginment 
+                           align becomes the horizontal L/R alignment*/
+  justify-content:center;
+  padding:5%;
+  width:35%;
+}
+#index_section6-container{
+  align-items:center;
+  background-image: url('images/indexp1.jpg');
+  background-repeat:no-repeat;
+  background-size:100% auto;
+  color:white;
+  display:flex;
+  justify-content:center;
+  padding:5%;
+  width:100%;
 }
 #index_section2-div2{
   width:30%;
@@ -65,6 +117,10 @@ main{ /*temporary*/
   display:flex;
   flex-direction: column;
   justify-content:center; /*this aligns vertically*/
+}
+
+main > section{
+  padding:3%;
 }
 nav{
   color:#F3E9DC;
