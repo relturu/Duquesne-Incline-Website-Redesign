@@ -6,10 +6,55 @@
   font-weight: bold;
   color: #352208 !important;
 }
+#contact_section1-container{
+  background-color:#F3E9DC;
+  background-image:url('images/duq_ken.png');
+  background-repeat: no-repeat;
+  /* background-position:center; */
+  display:flex;
+  justify-content:center;
+  padding:10%;
+  width:100%;
+}
 #contact_section2-container{
   display:flex;
   justify-content: space-evenly;
   width:100%; /*without this isn't evenly spaced*/
+}
+#contact_section2-div1{
+  background-color:#F3E9DC;
+  display:flex;
+  flex-direction:column;
+  font-size:150%;
+  justify-content:center;
+  margin-left: 2.5%;
+  margin-right:2.5%;
+  padding:2.5%;
+  width:100%;
+}
+#contact_section2-div1>a{
+  text-align:center;
+}
+#contact_section2-div2{
+  align-items:center;
+  background-color:#F3E9DC;
+  display:flex;
+  font-size:150%;
+  flex-direction:column;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  padding:2.5%;
+  width:100%;
+}
+#contact_section2-div2sub{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:100%;
+}
+#contact_form-submit{
+  font-size:75%;
+  padding:1%;
 }
 footer{
   align-items:center;

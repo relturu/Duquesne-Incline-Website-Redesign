@@ -26,14 +26,44 @@
     </header>
     <main>
       <section id="contact_section1-container">
-        <h1>Contact US</h1>
+        <h1>Contact Us</h1>
       </section>
       <section id="contact_section2-container">
         <div id="contact_section2-div1">
-          Col 1
+          <a>Join our mailing list!</a>
+          <form id="myForm" onsubmit="return validation()">
+            <label for="firstName">*First name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br>
+            
+            <label for="lastName">*Last name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br>
+            
+            <label for="email">*Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="mobile">Mobile Phone:</label><br>
+            <input type="tel" id="mobile" name="mobile"><br>
+            
+            <label for="zipcode">Zip Code:</label><br>
+            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Five digit zip code"><br>
+            
+            <input type="checkbox" id="smsConsent" name="smsConsent" value="Yes">
+            <label for="smsConsent"> I would like to receive SMS messages</label><br><br>
+            
+            <input id="contact_form-submit" type="submit" value="Submit" onclick="validate()">
+          </form>
         </div>
         <div id="contact_section2-div2">
-          Col 2
+          <a>Reach out!</a>
+          <div id="contact_section2-div2sub">
+            <a><b>Number<br></b>
+            412.381.1665</a>
+            <a><br><b>Email<br></b>
+            duq.incline@duquesneincline.org</a>
+            <a><br><b>Address<br></b>
+            1197 West Carson St.
+            Pittsburgh, PA.  15219</a>
+          </div>
         </div>
       </section>
     </main>
