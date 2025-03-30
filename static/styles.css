@@ -36,22 +36,33 @@ header{
   left:0%;
   /* position:absolute; */
   width:25%;
+  object-fit:contain;
 }
 #index_section1-container{
   background-color: #F3E9DC;
   display:flex;
+  margin:0%;
+  padding:0%;
+  width:100%;
   /* padding:2.5%; */
 }
 #index_section1-div1{
   display:flex;
+  /* flex-direction:column; */
+  padding:3%;
   width:70%;
 }
 #index_section1-div2{
+  align-items:center;
+  background-image: url('images/underground_tunnel.jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  color:white;
   display:flex;
   flex-direction:column;
   font-size:120%;
-  margin-left:1.5%;
-  margin-right:1.5%;
+  padding:3%;
   width:30%;
 }
 #index_section1-div2>h2{
