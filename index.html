@@ -14,12 +14,13 @@
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"></script>
+    <script defer src="static/script.js"></script>
   </head>
   <body>
     <header>
       <a class="logo_incline">The Incline</a>
       <nav>
-        <a class = "nav_item" href = "index.html"><b>Home</b></a>
+        <a class = "nav_item active-page" href = "index.html"><b>Home</b></a>
         <a class = "nav_item" href = "views/guide.html">Visitor's Guide</a>
         <a class = "nav_item" href = "views/history.html">Our History</a>
         <a class = "nav_item" href = "views/contact.html">Contact Us</a>
@@ -38,20 +39,25 @@
         <div id="index_section1-div2">
           <h2>Visitor Information</h2>
           <table>
-            <tr>
-              <td><b><i>Hours</i></b></td>
-              <td>Every day of the year</td>
-              <td>6:30am to 12:30am</td>
-            </tr>
-            <tr>
-              <td><b><i>Address</i></b></td>
-              <td colspan="2">1197 West Carson St.<br>Pittsburgh, PA. 15219</td>
-            </tr>
-            <tr>
-              <td><b><i>Fares</i></b></td>
-              <td>No reservations or advance tickets for single riders</td>
-              <td>ONLY Cash or Port Authority connect cards as payment</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Hours</th>
+                <th>Address</th>
+                <th>Fare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Every day of the year</td>
+                <td>1197 West Carson St.</td>
+                <td>No reservations or advance tickets for single riders</td>
+              </tr>
+              <tr>
+                <td>6:30am to 12:30am</td>
+                <td>Pittsburgh, PA. 15219</td>
+                <td>ONLY Cash or Port Authority connect cards as payment</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>
@@ -63,20 +69,41 @@
         </div>
         <div id="index_section2-div2">
           <h2>Why Visit Us?</h2>
-          hh
+          <p>
+            Visiting the Duquesne Incline offers a unique blend of history, breathtaking views, and cultural significance. In operation since 1877, this historic cable car provides a glimpse into Pittsburgh’s industrial past while offering an unforgettable ride up Mount Washington. At the top, visitors enjoy stunning panoramic views of downtown, the city’s famous bridges, and the three rivers. The upper station museum showcases original 19th-century machinery and historic photos. Whether you’re a history buff, photographer, or just looking for a unique experience, the Duquesne Incline is a must-visit. Plus, it’s a great starting point for exploring Mount Washington’s restaurants and scenic overlooks.
+          </p>
         </div>
       </section>
       <section id="index_section3-container">
         <h2>Gallery</h2>
+        images go here
+
       </section>
       <section id="index_section4-container">
-        <h2>Gift Shop</h2>
+        <h2>Contact</h2>
+        contact info and button to go to contact page !!
       </section>
       <section id="index_section5-container">
-        <h2>Schools, Group Rates, Patch Program</h2>
+        <h2>Gift Shop</h2>
+        <div id="index_section5-images">
+          <img src="static/images/woodcar.png" alt="wooden toy car">
+          <img src="static/images/postcard.png" alt="pittsburgh post card">
+        </div>
+        <a href="views/guidepages/shop.html" class="index_section6_btn">Browse Gift Shop</a>
       </section>
       <section id="index_section6-container">
-        <h2>Contact</h2>
+        <div id="index_section6_div1">
+          <img id="index_section6-busimg" src="static/images/bus.png" alt="bus companies img">
+          <a href="views/guidepages/groups.html" class="index_section6_btn">Reserve with a bus company</a>
+        </div>
+        <div id="index_section6_div2">
+          <img id="index_section6-schoolimg" src="static/images/school.png" alt="school img">
+          <a href="views/guidepages/groups.html" class="index_section6_btn">Reserve with a school</a>
+        </div>
+        <div id="index_section6_div3">
+          <img id="index_section6-patchimg" src="static/images/patch.png" alt="patch program img">
+          <a href="views/guidepages/groups.html" class="index_section6_btn">Reserve with Patch Program</a>
+        </div>
       </section>
     </main>
     <footer>
