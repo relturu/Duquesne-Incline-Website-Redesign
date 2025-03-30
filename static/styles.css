@@ -125,6 +125,32 @@ header{
 #index_section2-div2>p{
   font-size:150%;
 }
+#index_section3-container{
+  /* align-items:flex-start; */
+  background-image: url('images/duq_pano.jpeg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: contain;
+  display:flex;
+  justify-content:center;
+  padding:10%;
+  width:100%;
+}
+#index_section4-container{
+  background-color:#F3E9DC;
+  display:flex;
+  justify-content:center;
+  padding:10%;
+  width:100%;
+}
+#index_section4-contactbtn{
+  align-items:center;
+  background-color:#352208;
+  border-radius:15px;
+  color:#F3E9DC;
+  font-size:200%;
+  padding:2%;
+}
 #index_section5-container{
   align-items:center;
   background-color:#AA6373;
