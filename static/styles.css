@@ -219,6 +219,10 @@ header{
   flex-direction:column;
   font-size:125%;
 }
+#history_section3-container>div{
+  display:flex;
+  width:75%;
+}
 #index_img1-styling{
   left:0%;
   /* position:absolute; */
@@ -237,7 +241,7 @@ header{
   display:flex;
   /* flex-direction:column; */
   padding:3%;
-  width:65%;
+  width:55%;
 }
 #index_section1-div2{
   align-items:center;
@@ -249,7 +253,7 @@ header{
   flex-direction:column;
   font-size:120%;
   padding:3%;
-  width:35%;
+  width:45%;
 }
 #index_section1-div2,
 #index_section1-div2 *{
@@ -288,9 +292,10 @@ header{
   background-position:center;
   /* color:white; */
   display:flex;
+  flex-direction:column;
   justify-content:center;
   padding:5%;
-  width:63.5%;
+  width:50%;
 }
 #index_section2-div2{
   /* align-items:flex-end; */
@@ -299,7 +304,7 @@ header{
                            align becomes the horizontal L/R alignment*/
   justify-content:center;
   padding:3%;
-  width:36.5%;
+  width:50%;
 }
 #index_section2-div2>h2{
   font-size:200%;
@@ -308,18 +313,19 @@ header{
   font-size:150%;
 }
 #index_section3-container{
-  /* align-items:flex-start; */
-  background-image: url('images/duq_pano.jpeg');
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size: contain;
+  align-items:center;
+  /* background-image: url('images/duq_pano.jpeg'); */
+  /* background-repe: contain; */
+  background-color:#F3E9DC;
   display:flex;
+  flex-direction:column;
   justify-content:center;
-  padding:15%;
+  /* text-align:center; */
+  padding:5%;
   width:100%;
 }
 #index_section4-container{
-  background-color:#F3E9DC;
+  /* background-color:#F3E9DC; */
   display:flex;
   justify-content:center;
   padding:10%;
@@ -354,14 +360,14 @@ header{
 }
 #index_section6-container{
   align-items:center;
-  background-color:#F3E9DC;
+  /* background-color:#F3E9DC; */
   /* background-image: url('images/indexp1.jpg'); */
   /* background-repeat:no-repeat;
   background-size:100% auto; */
   /* color:white; */
   display:flex;
   justify-content:space-evenly;
-  padding:5%;
+  padding:10%;
   width:100%;
 }
 #index_section6-container>div{
@@ -430,4 +436,132 @@ a:active {
   text-decoration: none;
   color: inherit; /* Takes color from parent element */
   outline: none;
+}
+
+
+/*LightBox styling*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 25px;
+  justify-content:center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #eee; */
+}
+
+.gallery-item:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.gallery-item img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.15);
+}
+
+/* styling the lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 80vh;
+  margin: auto;
+}
+
+.lightbox-img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border: 3px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  color: white;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  /* transition: background 0.3s ease; */
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
