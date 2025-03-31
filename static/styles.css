@@ -10,6 +10,7 @@
   background-color:#F3E9DC;
   background-image:url('images/duq_ken.png');
   background-repeat: no-repeat;
+  background-size:cover;
   /* background-position:center; */
   display:flex;
   justify-content:center;
@@ -23,6 +24,7 @@
 }
 #contact_section2-div1{
   background-color:#F3E9DC;
+  border-radius:30px;
   display:flex;
   flex-direction:column;
   font-size:150%;
@@ -38,6 +40,7 @@
 #contact_section2-div2{
   align-items:center;
   background-color:#F3E9DC;
+  border-radius:30px;
   display:flex;
   font-size:150%;
   flex-direction:column;
@@ -175,6 +178,7 @@ header{
 }
 #history_section1-container{
   align-items:center;
+  background-color:#F3E9DC;
   display:flex;
   flex-direction:column;
   font-size:125%;
@@ -184,12 +188,31 @@ header{
   display:flex;
   flex-direction:column;
   font-size:125%;
+  padding:5%;
+}
+#history_section2-div2{
+  display:flex;
+  flex-wrap:wrap;
+}
+#history_section2-div2>ul{
+  width:60%;
+}
+#history_section2-div2>ul *{
+ padding:1.5%;
+}
+#history_section2-div2>img{
+  width:35%;
 }
 #history_section3-container{
   align-items:center;
+  background-color:#F3E9DC;
   display:flex;
   flex-direction:column;
   font-size:125%;
+}
+#history_old_incline{
+  flex-wrap:wrap;
+  width:20%;
 }
 #index_img1-styling{
   left:0%;
